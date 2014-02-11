@@ -429,7 +429,7 @@ ImpressionistUI::ImpressionistUI() {
 
 
 		// Add brush size slider to the dialog 
-		m_BrushSizeSlider = new Fl_Value_Slider(10, 80, 300, 20, "Size /\nLine Width");
+		m_BrushSizeSlider = new Fl_Value_Slider(10, 80, 300, 20, "Size");
 		m_BrushSizeSlider->user_data((void*)(this));	// record self to be used by static callback functions
 		m_BrushSizeSlider->type(FL_HOR_NICE_SLIDER);
         m_BrushSizeSlider->labelfont(FL_COURIER);
@@ -441,7 +441,7 @@ ImpressionistUI::ImpressionistUI() {
 		m_BrushSizeSlider->align(FL_ALIGN_RIGHT);
 		m_BrushSizeSlider->callback(cb_sizeSlides);
 
-		m_LineThicknessSlider = new Fl_Value_Slider(10, 110, 300, 20, "Line\nThickness");
+		m_LineThicknessSlider = new Fl_Value_Slider(10, 110, 300, 20, "Thickness");
 		m_LineThicknessSlider->user_data((void*)(this));	// record self to be used by static callback functions
 		m_LineThicknessSlider->type(FL_HOR_NICE_SLIDER);
 		m_LineThicknessSlider->labelfont(FL_COURIER);

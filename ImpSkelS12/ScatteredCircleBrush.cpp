@@ -39,7 +39,7 @@ void ScatteredCircleBrush::BrushMove( const Point source, const Point target )
 	}
 	int radius = pDoc->getSize();
 	for (int k=0;k<5;k++) {
-		Point offset=Point(frand()*radius-radius/2,frand()*radius-radius/2);
+		Point offset=Point(frand()*radius*2-radius,frand()*radius*2-radius);
 		Point newSource=Point(source.x+offset.x,source.y+offset.y);
 		glBegin( GL_POLYGON );
 		SetColor( newSource );
